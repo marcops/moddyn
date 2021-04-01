@@ -1,0 +1,287 @@
+Variables:
+constant_00001:INT, value = 32000
+class_DEFAULT_PAGE_SIZE_0000:INT, public=false, globalConstant=false, methodParam=false, origName=DEFAULT_PAGE_SIZE, methodName=null, privateMethod=false, volatile=false, chaining=false, init=32000:INT(constant_00001)
+constant_00003:INT, value = 256000
+class_DEFAULT_MEMORY_SIZE_PER_BLOCK_0002:INT, public=false, globalConstant=false, methodParam=false, origName=DEFAULT_MEMORY_SIZE_PER_BLOCK, methodName=null, privateMethod=false, volatile=false, chaining=false, init=256000:INT(constant_00003)
+constant_00005:INT, value = 8
+class_BYTE_SIZE_0004:INT, public=false, globalConstant=false, methodParam=false, origName=BYTE_SIZE, methodName=null, privateMethod=false, volatile=false, chaining=false, init=8:INT(constant_00005)
+class_pageSize_0006:INT, public=false, globalConstant=false, methodParam=false, origName=pageSize, methodName=null, privateMethod=false, volatile=false, chaining=false, init=class_DEFAULT_PAGE_SIZE_0000:INT
+constant_00008:INT, value = 256000
+ArrayRef<ARRAY>(depth=18, words=256000)
+class_data1_0007:ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=data1, methodName=null, privateMethod=false, volatile=false, chaining=false, init=ArrayRef<ARRAY>(depth=18, words=256000)
+constant_00011:INT, value = 256000
+ArrayRef<ARRAY>(depth=18, words=256000)
+class_data2_0010:ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=data2, methodName=null, privateMethod=false, volatile=false, chaining=false, init=ArrayRef<ARRAY>(depth=18, words=256000)
+setPageSize_newPageSize_0013:INT, public=false, globalConstant=false, methodParam=true, origName=newPageSize, methodName=setPageSize, privateMethod=false, volatile=false, chaining=false
+writeFlow_address_0014:INT, public=false, globalConstant=false, methodParam=true, origName=address, methodName=writeFlow, privateMethod=false, volatile=false, chaining=false
+writeFlow_data_0015:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=writeFlow, privateMethod=false, volatile=false, chaining=false
+method_result_00017:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00017, methodName=null, privateMethod=false, volatile=false, chaining=false
+writeFlow_ecc_0016:INT, public=false, globalConstant=false, methodParam=false, origName=ecc, methodName=writeFlow, privateMethod=false, volatile=false, chaining=false, init=method_result_00017:INT
+method_result_00018:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00018, methodName=null, privateMethod=false, volatile=false, chaining=false
+readFlow_address_0019:INT, public=false, globalConstant=false, methodParam=true, origName=address, methodName=readFlow, privateMethod=false, volatile=false, chaining=false
+readFlow_data_0020:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=readFlow, privateMethod=false, volatile=false, chaining=false
+method_result_00022:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00022, methodName=null, privateMethod=false, volatile=false, chaining=false
+readFlow_ecc_0021:INT, public=false, globalConstant=false, methodParam=false, origName=ecc, methodName=readFlow, privateMethod=false, volatile=false, chaining=false, init=method_result_00022:INT
+method_result_00024:BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=method_result_00024, methodName=null, privateMethod=false, volatile=false, chaining=false
+readFlow_isOk_0023:BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=isOk, methodName=readFlow, privateMethod=false, volatile=false, chaining=false, init=method_result_00024:BOOLEAN
+method_result_00025:VOID, public=false, globalConstant=false, methodParam=false, origName=method_result_00025, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00026:INT, value = 0
+getEcc_address_0027:INT, public=false, globalConstant=false, methodParam=true, origName=address, methodName=getEcc, privateMethod=true, volatile=false, chaining=false
+method_result_00029:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00029, methodName=null, privateMethod=false, volatile=false, chaining=false
+getEcc_dataPosition_0028:INT, public=false, globalConstant=false, methodParam=false, origName=dataPosition, methodName=getEcc, privateMethod=true, volatile=false, chaining=false, init=method_result_00029:INT
+array_access_00031:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00031, methodName=null, privateMethod=false, volatile=false, chaining=false
+getEcc_currentData1_0030:BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=currentData1, methodName=getEcc, privateMethod=true, volatile=false, chaining=false, init=array_access_00031:ArrayRef::ArrayType::BOOLEAN
+array_access_00033:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00033, methodName=null, privateMethod=false, volatile=false, chaining=false
+getEcc_currentData2_0032:BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=currentData2, methodName=getEcc, privateMethod=true, volatile=false, chaining=false, init=array_access_00033:ArrayRef::ArrayType::BOOLEAN
+constant_00034:INT, value = 1
+constant_00035:INT, value = 0
+cond_expr_00036:INT, public=false, globalConstant=false, methodParam=false, origName=cond_expr_00036, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00037:INT, value = 2
+constant_00038:INT, value = 0
+cond_expr_00039:INT, public=false, globalConstant=false, methodParam=false, origName=cond_expr_00039, methodName=null, privateMethod=false, volatile=false, chaining=false
+binary_expr_00040:INT, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00040, methodName=null, privateMethod=false, volatile=false, chaining=false
+getPosition_address_0041:INT, public=false, globalConstant=false, methodParam=true, origName=address, methodName=getPosition, privateMethod=true, volatile=false, chaining=false
+binary_expr_00042:INT, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00042, methodName=null, privateMethod=false, volatile=false, chaining=false
+binary_expr_00043:INT, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00043, methodName=null, privateMethod=false, volatile=false, chaining=false
+incrementEcc_position_0044:INT, public=false, globalConstant=false, methodParam=true, origName=position, methodName=incrementEcc, privateMethod=true, volatile=false, chaining=false
+incrementEcc_ecc_0045:INT, public=false, globalConstant=false, methodParam=true, origName=ecc, methodName=incrementEcc, privateMethod=true, volatile=false, chaining=false
+constant_00046:INT, value = 0
+constant_00047:INT, value = 1
+constant_00048:INT, value = 2
+constant_00049:INT, value = 3
+constant_00050:BOOLEAN, value = true
+array_access_00051:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00051, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00052:BOOLEAN, value = true
+array_access_00053:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00053, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00054:BOOLEAN, value = false
+array_access_00055:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00055, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00056:BOOLEAN, value = true
+array_access_00057:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00057, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00058:BOOLEAN, value = true
+array_access_00059:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00059, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00060:BOOLEAN, value = false
+array_access_00061:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00061, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00062:BOOLEAN, value = false
+array_access_00063:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00063, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00064:BOOLEAN, value = false
+array_access_00065:ArrayRef::ArrayType::BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=array_access_00065, methodName=null, privateMethod=false, volatile=false, chaining=false
+migration_address_0066:INT, public=false, globalConstant=false, methodParam=true, origName=address, methodName=migration, privateMethod=true, volatile=false, chaining=false
+migration_ecc_0067:INT, public=false, globalConstant=false, methodParam=true, origName=ecc, methodName=migration, privateMethod=true, volatile=false, chaining=false
+migration_pageSize_0068:INT, public=false, globalConstant=false, methodParam=true, origName=pageSize, methodName=migration, privateMethod=true, volatile=false, chaining=false
+constant_00069:INT, value = 3
+binary_expr_00070:BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00070, methodName=null, privateMethod=false, volatile=false, chaining=false
+binary_expr_00072:INT, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00072, methodName=null, privateMethod=false, volatile=false, chaining=false
+migration_position_0071:INT, public=false, globalConstant=false, methodParam=false, origName=position, methodName=migration, privateMethod=true, volatile=false, chaining=false, init=binary_expr_00072:INT
+binary_expr_00074:INT, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00074, methodName=null, privateMethod=false, volatile=false, chaining=false
+migration_initialAddress_0073:INT, public=false, globalConstant=false, methodParam=false, origName=initialAddress, methodName=migration, privateMethod=true, volatile=false, chaining=false, init=binary_expr_00074:INT
+constant_00076:INT, value = 0
+migration_i_0075:INT, public=false, globalConstant=false, methodParam=false, origName=i, methodName=migration, privateMethod=true, volatile=false, chaining=false, init=0:INT(constant_00076)
+binary_expr_00077:BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00077, methodName=null, privateMethod=false, volatile=false, chaining=false
+unary_expr_00078:INT, public=false, globalConstant=false, methodParam=false, origName=unary_expr_00078, methodName=null, privateMethod=false, volatile=false, chaining=false
+unary_expr_postfix_preserved_00079:INT, public=false, globalConstant=false, methodParam=false, origName=unary_expr_postfix_preserved_00079, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00080:INT, value = 1
+method_result_00082:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00082, methodName=null, privateMethod=false, volatile=false, chaining=false
+binary_expr_00083:INT, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00083, methodName=null, privateMethod=false, volatile=false, chaining=false
+migration_read_0081:INT, public=false, globalConstant=false, methodParam=false, origName=read, methodName=migration, privateMethod=true, volatile=false, chaining=false, init=method_result_00082:INT
+method_result_00084:VOID, public=false, globalConstant=false, methodParam=false, origName=method_result_00084, methodName=null, privateMethod=false, volatile=false, chaining=false
+binary_expr_00085:INT, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00085, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00086:INT, value = 1
+binary_expr_00087:INT, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00087, methodName=null, privateMethod=false, volatile=false, chaining=false
+method_result_00088:VOID, public=false, globalConstant=false, methodParam=false, origName=method_result_00088, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00089:INT, value = 1
+binary_expr_00090:INT, public=false, globalConstant=false, methodParam=false, origName=binary_expr_00090, methodName=null, privateMethod=false, volatile=false, chaining=false
+write_address_0091:INT, public=false, globalConstant=false, methodParam=true, origName=address, methodName=write, privateMethod=true, volatile=false, chaining=false
+write_data_0092:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=write, privateMethod=true, volatile=false, chaining=false
+write_ecc_0093:INT, public=false, globalConstant=false, methodParam=true, origName=ecc, methodName=write, privateMethod=true, volatile=false, chaining=false
+method_result_00095:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00095, methodName=null, privateMethod=false, volatile=false, chaining=false
+write_newData_0094:INT, public=false, globalConstant=false, methodParam=false, origName=newData, methodName=write, privateMethod=true, volatile=false, chaining=false, init=method_result_00095:INT
+constant_00096:INT, value = 1
+constant_00097:INT, value = 2
+constant_00098:INT, value = 3
+method_result_00099:VOID, public=false, globalConstant=false, methodParam=false, origName=method_result_00099, methodName=null, privateMethod=false, volatile=false, chaining=false
+method_result_00100:VOID, public=false, globalConstant=false, methodParam=false, origName=method_result_00100, methodName=null, privateMethod=false, volatile=false, chaining=false
+method_result_00101:VOID, public=false, globalConstant=false, methodParam=false, origName=method_result_00101, methodName=null, privateMethod=false, volatile=false, chaining=false
+read_address_0102:INT, public=false, globalConstant=false, methodParam=true, origName=address, methodName=read, privateMethod=true, volatile=false, chaining=false
+read_ecc_0103:INT, public=false, globalConstant=false, methodParam=true, origName=ecc, methodName=read, privateMethod=true, volatile=false, chaining=false
+method_result_00105:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00105, methodName=null, privateMethod=false, volatile=false, chaining=false
+read_data_0104:INT, public=false, globalConstant=false, methodParam=false, origName=data, methodName=read, privateMethod=true, volatile=false, chaining=false, init=method_result_00105:INT
+method_result_00106:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00106, methodName=null, privateMethod=false, volatile=false, chaining=false
+writeRAM_address_0107:INT, public=false, globalConstant=false, methodParam=true, origName=address, methodName=writeRAM, privateMethod=true, volatile=false, chaining=false
+writeRAM_data_0108:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=writeRAM, privateMethod=true, volatile=false, chaining=false
+readRAM_address_0109:INT, public=false, globalConstant=false, methodParam=true, origName=address, methodName=readRAM, privateMethod=true, volatile=false, chaining=false
+constant_00110:INT, value = 0
+checkECC_data_0111:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=checkECC, privateMethod=true, volatile=false, chaining=false
+checkECC_ecc_0112:INT, public=false, globalConstant=false, methodParam=true, origName=ecc, methodName=checkECC, privateMethod=true, volatile=false, chaining=false
+constant_00113:INT, value = 0
+constant_00114:INT, value = 1
+constant_00115:INT, value = 2
+constant_00116:INT, value = 3
+method_result_00117:BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=method_result_00117, methodName=null, privateMethod=false, volatile=false, chaining=false
+method_result_00118:BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=method_result_00118, methodName=null, privateMethod=false, volatile=false, chaining=false
+method_result_00119:BOOLEAN, public=false, globalConstant=false, methodParam=false, origName=method_result_00119, methodName=null, privateMethod=false, volatile=false, chaining=false
+constant_00120:BOOLEAN, value = true
+doEcc_data_0121:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=doEcc, privateMethod=true, volatile=false, chaining=false
+doEcc_ecc_0122:INT, public=false, globalConstant=false, methodParam=true, origName=ecc, methodName=doEcc, privateMethod=true, volatile=false, chaining=false
+constant_00123:INT, value = 0
+constant_00124:INT, value = 1
+constant_00125:INT, value = 2
+constant_00126:INT, value = 3
+method_result_00127:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00127, methodName=null, privateMethod=false, volatile=false, chaining=false
+method_result_00128:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00128, methodName=null, privateMethod=false, volatile=false, chaining=false
+method_result_00129:INT, public=false, globalConstant=false, methodParam=false, origName=method_result_00129, methodName=null, privateMethod=false, volatile=false, chaining=false
+doReedSolomon_data_0130:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=doReedSolomon, privateMethod=true, volatile=false, chaining=false
+doHamming_data_0131:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=doHamming, privateMethod=true, volatile=false, chaining=false
+doParity_data_0132:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=doParity, privateMethod=true, volatile=false, chaining=false
+checkReedSolomon_data_0133:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=checkReedSolomon, privateMethod=true, volatile=false, chaining=false
+constant_00134:BOOLEAN, value = true
+checkHamming_data_0135:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=checkHamming, privateMethod=true, volatile=false, chaining=false
+constant_00136:BOOLEAN, value = true
+checkParity_data_0137:INT, public=false, globalConstant=false, methodParam=true, origName=data, methodName=checkParity, privateMethod=true, volatile=false, chaining=false
+constant_00138:BOOLEAN, value = true
+
+setPageSize_0000: op=METHOD_EXIT, src=, dest=, next=0001
+setPageSize_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=setPageSize)
+setPageSize_0002: op=ASSIGN, src=setPageSize_newPageSize_0013:INT, dest=class_pageSize_0006:INT, next=0000
+writeFlow_0000: op=METHOD_EXIT, src=, dest=, next=0001
+writeFlow_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=writeFlow)
+writeFlow_0002: op=CALL, src=writeFlow_address_0014:INT, dest=method_result_00017:INT, next=0003 (name=getEcc, args= address)
+writeFlow_0003: op=ASSIGN, src=method_result_00017:INT, dest=writeFlow_ecc_0016:INT, next=0004
+writeFlow_0004: op=CALL, src=writeFlow_data_0015:INT, writeFlow_ecc_0016:INT, dest=method_result_00018:INT, next=0005 (name=doEcc, args= data ecc)
+writeFlow_0005: op=RETURN, src=method_result_00018:INT, dest=, next=0000
+readFlow_0000: op=METHOD_EXIT, src=, dest=, next=0001
+readFlow_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=readFlow)
+readFlow_0002: op=CALL, src=readFlow_address_0019:INT, dest=method_result_00022:INT, next=0003 (name=getEcc, args= address)
+readFlow_0003: op=ASSIGN, src=method_result_00022:INT, dest=readFlow_ecc_0021:INT, next=0004
+readFlow_0004: op=CALL, src=readFlow_data_0020:INT, readFlow_ecc_0021:INT, dest=method_result_00024:BOOLEAN, next=0005 (name=checkECC, args= data ecc)
+readFlow_0005: op=ASSIGN, src=method_result_00024:BOOLEAN, dest=readFlow_isOk_0023:BOOLEAN, next=0006
+readFlow_0006: op=JT, src=readFlow_isOk_0023:BOOLEAN, dest=, next=0008, 0010
+readFlow_0008: op=RETURN, src=readFlow_data_0020:INT, dest=, next=0000
+readFlow_0010: op=CALL, src=readFlow_address_0019:INT, readFlow_ecc_0021:INT, class_pageSize_0006:INT, dest=method_result_00025:VOID, next=0011 (name=migration, args= address ecc pageSize)
+readFlow_0011: op=RETURN, src=0:INT(constant_00026), dest=, next=0000
+getEcc_0000: op=METHOD_EXIT, src=, dest=, next=0001
+getEcc_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=getEcc)
+getEcc_0002: op=CALL, src=getEcc_address_0027:INT, dest=method_result_00029:INT, next=0003 (name=getPosition, args= address)
+getEcc_0003: op=ASSIGN, src=method_result_00029:INT, dest=getEcc_dataPosition_0028:INT, next=0004
+getEcc_0004: op=ARRAY_INDEX, src=class_data1_0007:ArrayType::BOOLEAN, getEcc_dataPosition_0028:INT, dest=array_access_00031:ArrayRef::ArrayType::BOOLEAN, next=0013
+getEcc_0013: op=ARRAY_ACCESS_WAIT, src=class_data1_0007:ArrayType::BOOLEAN, getEcc_dataPosition_0028:INT, dest=array_access_00031:ArrayRef::ArrayType::BOOLEAN, next=0014
+getEcc_0014: op=ARRAY_ACCESS0, src=class_data1_0007:ArrayType::BOOLEAN, getEcc_dataPosition_0028:INT, dest=array_access_00031:ArrayRef::ArrayType::BOOLEAN, next=0005
+getEcc_0005: op=ASSIGN, src=array_access_00031:ArrayRef::ArrayType::BOOLEAN, dest=getEcc_currentData1_0030:BOOLEAN, next=0006
+getEcc_0006: op=ARRAY_INDEX, src=class_data2_0010:ArrayType::BOOLEAN, getEcc_dataPosition_0028:INT, dest=array_access_00033:ArrayRef::ArrayType::BOOLEAN, next=0015
+getEcc_0015: op=ARRAY_ACCESS_WAIT, src=class_data2_0010:ArrayType::BOOLEAN, getEcc_dataPosition_0028:INT, dest=array_access_00033:ArrayRef::ArrayType::BOOLEAN, next=0016
+getEcc_0016: op=ARRAY_ACCESS0, src=class_data2_0010:ArrayType::BOOLEAN, getEcc_dataPosition_0028:INT, dest=array_access_00033:ArrayRef::ArrayType::BOOLEAN, next=0007
+getEcc_0007: op=ASSIGN, src=array_access_00033:ArrayRef::ArrayType::BOOLEAN, dest=getEcc_currentData2_0032:BOOLEAN, next=0009
+getEcc_0007: op=COND, src=getEcc_currentData1_0030:BOOLEAN, 1:INT(constant_00034), 0:INT(constant_00035), dest=cond_expr_00036:INT, next=0009
+getEcc_0009: op=COND, src=getEcc_currentData2_0032:BOOLEAN, 2:INT(constant_00037), 0:INT(constant_00038), dest=cond_expr_00039:INT, next=0010
+getEcc_0010: op=ADD, src=cond_expr_00036:INT, cond_expr_00039:INT, dest=binary_expr_00040:INT, next=0011
+getEcc_0011: op=RETURN, src=binary_expr_00040:INT, dest=, next=0000
+getPosition_0000: op=METHOD_EXIT, src=, dest=, next=0001
+getPosition_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=getPosition)
+getPosition_0002: op=MUL32, src=class_pageSize_0006:INT, class_BYTE_SIZE_0004:INT, dest=binary_expr_00042:INT, next=0003
+getPosition_0003: op=DIV32, src=getPosition_address_0041:INT, binary_expr_00042:INT, dest=binary_expr_00043:INT, next=0004
+getPosition_0004: op=RETURN, src=binary_expr_00043:INT, dest=, next=0000
+incrementEcc_0000: op=METHOD_EXIT, src=, dest=, next=0001
+incrementEcc_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=incrementEcc)
+incrementEcc_0002: op=SELECT, src=incrementEcc_ecc_0045:INT, dest=, next=0023, 0017, 0011, 0005, 0000 ( target=incrementEcc_ecc_0045:INT pat=0:INT(constant_00046), 1:INT(constant_00047), 2:INT(constant_00048), 3:INT(constant_00049)
+incrementEcc_0005: op=ARRAY_INDEX, src=class_data1_0007:ArrayType::BOOLEAN, incrementEcc_position_0044:INT, dest=array_access_00051:ArrayRef::ArrayType::BOOLEAN, next=0007
+incrementEcc_0005: op=ASSIGN, src=true:BOOLEAN(constant_00050), dest=array_access_00051:ArrayRef::ArrayType::BOOLEAN, next=0007
+incrementEcc_0007: op=ARRAY_INDEX, src=class_data2_0010:ArrayType::BOOLEAN, incrementEcc_position_0044:INT, dest=array_access_00053:ArrayRef::ArrayType::BOOLEAN, next=0009
+incrementEcc_0007: op=ASSIGN, src=true:BOOLEAN(constant_00052), dest=array_access_00053:ArrayRef::ArrayType::BOOLEAN, next=0009
+incrementEcc_0009: op=BREAK, src=, dest=, next=0000
+incrementEcc_0011: op=ARRAY_INDEX, src=class_data1_0007:ArrayType::BOOLEAN, incrementEcc_position_0044:INT, dest=array_access_00055:ArrayRef::ArrayType::BOOLEAN, next=0013
+incrementEcc_0011: op=ASSIGN, src=false:BOOLEAN(constant_00054), dest=array_access_00055:ArrayRef::ArrayType::BOOLEAN, next=0013
+incrementEcc_0013: op=ARRAY_INDEX, src=class_data2_0010:ArrayType::BOOLEAN, incrementEcc_position_0044:INT, dest=array_access_00057:ArrayRef::ArrayType::BOOLEAN, next=0015
+incrementEcc_0013: op=ASSIGN, src=true:BOOLEAN(constant_00056), dest=array_access_00057:ArrayRef::ArrayType::BOOLEAN, next=0015
+incrementEcc_0015: op=BREAK, src=, dest=, next=0000
+incrementEcc_0017: op=ARRAY_INDEX, src=class_data1_0007:ArrayType::BOOLEAN, incrementEcc_position_0044:INT, dest=array_access_00059:ArrayRef::ArrayType::BOOLEAN, next=0019
+incrementEcc_0017: op=ASSIGN, src=true:BOOLEAN(constant_00058), dest=array_access_00059:ArrayRef::ArrayType::BOOLEAN, next=0019
+incrementEcc_0019: op=ARRAY_INDEX, src=class_data2_0010:ArrayType::BOOLEAN, incrementEcc_position_0044:INT, dest=array_access_00061:ArrayRef::ArrayType::BOOLEAN, next=0021
+incrementEcc_0019: op=ASSIGN, src=false:BOOLEAN(constant_00060), dest=array_access_00061:ArrayRef::ArrayType::BOOLEAN, next=0021
+incrementEcc_0021: op=BREAK, src=, dest=, next=0000
+incrementEcc_0023: op=ARRAY_INDEX, src=class_data1_0007:ArrayType::BOOLEAN, incrementEcc_position_0044:INT, dest=array_access_00063:ArrayRef::ArrayType::BOOLEAN, next=0025
+incrementEcc_0023: op=ASSIGN, src=false:BOOLEAN(constant_00062), dest=array_access_00063:ArrayRef::ArrayType::BOOLEAN, next=0025
+incrementEcc_0025: op=ARRAY_INDEX, src=class_data2_0010:ArrayType::BOOLEAN, incrementEcc_position_0044:INT, dest=array_access_00065:ArrayRef::ArrayType::BOOLEAN, next=0027
+incrementEcc_0025: op=ASSIGN, src=false:BOOLEAN(constant_00064), dest=array_access_00065:ArrayRef::ArrayType::BOOLEAN, next=0027
+incrementEcc_0027: op=BREAK, src=, dest=, next=0000
+migration_0000: op=METHOD_EXIT, src=, dest=, next=0001
+migration_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=migration)
+migration_0002: op=COMPEQ, src=migration_ecc_0067:INT, 3:INT(constant_00069), dest=binary_expr_00070:BOOLEAN, next=0003
+migration_0003: op=JT, src=binary_expr_00070:BOOLEAN, dest=, next=0005, 0007
+migration_0005: op=RETURN, src=, dest=, next=0000
+migration_0007: op=DIV32, src=migration_address_0066:INT, migration_pageSize_0068:INT, dest=binary_expr_00072:INT, next=0008
+migration_0008: op=ASSIGN, src=binary_expr_00072:INT, dest=migration_position_0071:INT, next=0009
+migration_0009: op=MUL32, src=migration_position_0071:INT, migration_pageSize_0068:INT, dest=binary_expr_00074:INT, next=0010
+migration_0010: op=ASSIGN, src=binary_expr_00074:INT, dest=migration_initialAddress_0073:INT, next=0012
+migration_0010: op=ASSIGN, src=0:INT(constant_00076), dest=migration_i_0075:INT, next=0012
+migration_0012: op=LT, src=migration_i_0075:INT, migration_pageSize_0068:INT, dest=binary_expr_00077:BOOLEAN, next=0013
+migration_0013: op=JT, src=binary_expr_00077:BOOLEAN, dest=, next=0019, 0026
+migration_0015: op=ASSIGN, src=migration_i_0075:INT, dest=unary_expr_postfix_preserved_00079:INT, next=0017
+migration_0015: op=ADD, src=migration_i_0075:INT, 1:INT(constant_00080), dest=unary_expr_00078:INT, next=0017
+migration_0017: op=ASSIGN, src=unary_expr_00078:INT, dest=migration_i_0075:INT, next=0012
+migration_0019: op=ADD, src=migration_initialAddress_0073:INT, migration_i_0075:INT, dest=binary_expr_00083:INT, next=0020
+migration_0020: op=CALL, src=binary_expr_00083:INT, migration_ecc_0067:INT, dest=method_result_00082:INT, next=0021 (name=read, args= address ecc)
+migration_0021: op=ASSIGN, src=method_result_00082:INT, dest=migration_read_0081:INT, next=0024
+migration_0021: op=ADD, src=migration_initialAddress_0073:INT, migration_i_0075:INT, dest=binary_expr_00085:INT, next=0024
+migration_0021: op=ADD, src=migration_ecc_0067:INT, 1:INT(constant_00086), dest=binary_expr_00087:INT, next=0024
+migration_0024: op=CALL, src=binary_expr_00085:INT, migration_read_0081:INT, binary_expr_00087:INT, dest=method_result_00084:VOID, next=0015 (name=write, args= address data ecc)
+migration_0026: op=ADD, src=migration_ecc_0067:INT, 1:INT(constant_00089), dest=binary_expr_00090:INT, next=0027
+migration_0027: op=CALL, src=migration_position_0071:INT, binary_expr_00090:INT, dest=method_result_00088:VOID, next=0000 (name=incrementEcc, args= position ecc)
+write_0000: op=METHOD_EXIT, src=, dest=, next=0001
+write_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=write)
+write_0002: op=CALL, src=write_data_0092:INT, write_ecc_0093:INT, dest=method_result_00095:INT, next=0003 (name=doEcc, args= data ecc)
+write_0003: op=ASSIGN, src=method_result_00095:INT, dest=write_newData_0094:INT, next=0004
+write_0004: op=SELECT, src=write_ecc_0093:INT, dest=, next=0013, 0010, 0007, 0000 ( target=write_ecc_0093:INT pat=1:INT(constant_00096), 2:INT(constant_00097), 3:INT(constant_00098)
+write_0007: op=CALL, src=write_address_0091:INT, write_newData_0094:INT, dest=method_result_00099:VOID, next=0008 (name=writeRAM, args= address data)
+write_0008: op=BREAK, src=, dest=, next=0000
+write_0010: op=CALL, src=write_address_0091:INT, write_newData_0094:INT, dest=method_result_00100:VOID, next=0011 (name=writeRAM, args= address data)
+write_0011: op=BREAK, src=, dest=, next=0000
+write_0013: op=CALL, src=write_address_0091:INT, write_newData_0094:INT, dest=method_result_00101:VOID, next=0014 (name=writeRAM, args= address data)
+write_0014: op=BREAK, src=, dest=, next=0000
+read_0000: op=METHOD_EXIT, src=, dest=, next=0001
+read_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=read)
+read_0002: op=CALL, src=read_address_0102:INT, dest=method_result_00105:INT, next=0003 (name=readRAM, args= address)
+read_0003: op=ASSIGN, src=method_result_00105:INT, dest=read_data_0104:INT, next=0004
+read_0004: op=CALL, src=read_data_0104:INT, read_ecc_0103:INT, dest=method_result_00106:INT, next=0005 (name=doEcc, args= data ecc)
+read_0005: op=RETURN, src=method_result_00106:INT, dest=, next=0000
+writeRAM_0000: op=METHOD_EXIT, src=, dest=, next=0001
+writeRAM_0001: op=METHOD_ENTRY, src=, dest=, next=0000 (name=writeRAM)
+readRAM_0000: op=METHOD_EXIT, src=, dest=, next=0001
+readRAM_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=readRAM)
+readRAM_0002: op=RETURN, src=0:INT(constant_00110), dest=, next=0000
+checkECC_0000: op=METHOD_EXIT, src=, dest=, next=0001
+checkECC_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=checkECC)
+checkECC_0002: op=SELECT, src=checkECC_ecc_0112:INT, dest=, next=0014, 0011, 0008, 0005, 0000 ( target=checkECC_ecc_0112:INT pat=0:INT(constant_00113), 1:INT(constant_00114), 2:INT(constant_00115), 3:INT(constant_00116)
+checkECC_0005: op=CALL, src=checkECC_data_0111:INT, dest=method_result_00117:BOOLEAN, next=0006 (name=checkReedSolomon, args= data)
+checkECC_0006: op=RETURN, src=method_result_00117:BOOLEAN, dest=, next=0000
+checkECC_0008: op=CALL, src=checkECC_data_0111:INT, dest=method_result_00118:BOOLEAN, next=0009 (name=checkHamming, args= data)
+checkECC_0009: op=RETURN, src=method_result_00118:BOOLEAN, dest=, next=0000
+checkECC_0011: op=CALL, src=checkECC_data_0111:INT, dest=method_result_00119:BOOLEAN, next=0012 (name=checkParity, args= data)
+checkECC_0012: op=RETURN, src=method_result_00119:BOOLEAN, dest=, next=0000
+checkECC_0014: op=RETURN, src=true:BOOLEAN(constant_00120), dest=, next=0000
+doEcc_0000: op=METHOD_EXIT, src=, dest=, next=0001
+doEcc_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=doEcc)
+doEcc_0002: op=SELECT, src=doEcc_ecc_0122:INT, dest=, next=0014, 0011, 0008, 0005, 0000 ( target=doEcc_ecc_0122:INT pat=0:INT(constant_00123), 1:INT(constant_00124), 2:INT(constant_00125), 3:INT(constant_00126)
+doEcc_0005: op=CALL, src=doEcc_data_0121:INT, dest=method_result_00127:INT, next=0006 (name=doReedSolomon, args= data)
+doEcc_0006: op=RETURN, src=method_result_00127:INT, dest=, next=0000
+doEcc_0008: op=CALL, src=doEcc_data_0121:INT, dest=method_result_00128:INT, next=0009 (name=doHamming, args= data)
+doEcc_0009: op=RETURN, src=method_result_00128:INT, dest=, next=0000
+doEcc_0011: op=CALL, src=doEcc_data_0121:INT, dest=method_result_00129:INT, next=0012 (name=doParity, args= data)
+doEcc_0012: op=RETURN, src=method_result_00129:INT, dest=, next=0000
+doEcc_0014: op=RETURN, src=doEcc_data_0121:INT, dest=, next=0000
+doReedSolomon_0000: op=METHOD_EXIT, src=, dest=, next=0001
+doReedSolomon_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=doReedSolomon)
+doReedSolomon_0002: op=RETURN, src=doReedSolomon_data_0130:INT, dest=, next=0000
+doHamming_0000: op=METHOD_EXIT, src=, dest=, next=0001
+doHamming_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=doHamming)
+doHamming_0002: op=RETURN, src=doHamming_data_0131:INT, dest=, next=0000
+doParity_0000: op=METHOD_EXIT, src=, dest=, next=0001
+doParity_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=doParity)
+doParity_0002: op=RETURN, src=doParity_data_0132:INT, dest=, next=0000
+checkReedSolomon_0000: op=METHOD_EXIT, src=, dest=, next=0001
+checkReedSolomon_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=checkReedSolomon)
+checkReedSolomon_0002: op=RETURN, src=true:BOOLEAN(constant_00134), dest=, next=0000
+checkHamming_0000: op=METHOD_EXIT, src=, dest=, next=0001
+checkHamming_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=checkHamming)
+checkHamming_0002: op=RETURN, src=true:BOOLEAN(constant_00136), dest=, next=0000
+checkParity_0000: op=METHOD_EXIT, src=, dest=, next=0001
+checkParity_0001: op=METHOD_ENTRY, src=, dest=, next=0002 (name=checkParity)
+checkParity_0002: op=RETURN, src=true:BOOLEAN(constant_00138), dest=, next=0000
