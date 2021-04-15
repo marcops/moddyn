@@ -1,15 +1,11 @@
 package moduledynamic;
 
-public class ModuleDynamic_migLOOP {
-
-	public ModuleDynamic_migLOOP() {
-	}
-
-
-	// END MEM ACCESS
+public class ModuleDynamic_migLoop {
 
 	// MOD MIGRATION
-	public void migration2( int initialAddress, int ecc, int pageSize) {
+	public void migration(int ecc, int pageSize) {
+		int initialAddress = 0;
+
 		for (int i = 0; i < pageSize; i++) {
 			int read = read(initialAddress + i, ecc);
 			write(initialAddress + i, read, ecc + 1);
@@ -54,8 +50,6 @@ public class ModuleDynamic_migLOOP {
 	}
 	// END MOD MIGRATION
 
-	// MOD ECC
-
 	private static int doEcc(int data, int ecc) {
 		switch (ecc) {
 		default:
@@ -90,25 +84,7 @@ public class ModuleDynamic_migLOOP {
 	 */
 	private static int doParity(int data) {
 		return data;
-//			int y = data ^ (data >> 1);
-//			y = y ^ (y >> 2);
-//			y = y ^ (y >> 4);
-//			y = y ^ (y >> 8);
-//			y = y ^ (y >> 16);
-		//
-//			// Rightmost bit of y holds the parity value
-//			// if (y&1) is 1 then parity is odd else even
-//			if ((y & 1) == 0) return data;
-//			return set(data, 32);
 	}
 
-	/**
-	 * @param data
-	 */
-
-//		public int set(int value, int bit) {
-//			return value | (1 << bit);
-//		}
-	// END ECC
 
 }

@@ -13,9 +13,8 @@ public class ModuleDynamic_full {
 
 	public int readFlow(int address, int data) {
 		int ecc = getEcc(address);
-		boolean isOk = checkECC(data, ecc);
-		if (isOk)
-			return data;
+		int isOk = checkECC(data, ecc);
+		if (isOk == 1) return data;
 		migration(address, ecc, pageSize);
 		return 0;
 	}
@@ -40,10 +39,10 @@ public class ModuleDynamic_full {
 
 	private int getEcc(int address) {
 		int dataPosition = getPosition(address);
-		boolean currentData1 = data1[dataPosition];
-		boolean currentData2 = data2[dataPosition];
+		int currentData1 = data1[dataPosition] == true ? 1 : 0;
+		int currentData2 = data2[dataPosition] == true ? 2 : 0;
 
-		return (currentData1 ? 1 : 0) + (currentData2 ? 2 : 0);
+		return currentData1 + currentData2;
 	}
 
 	private int getPosition(int address) {
@@ -128,11 +127,11 @@ public class ModuleDynamic_full {
 	// END MOD MIGRATION
 
 	// MOD ECC
-	private static boolean checkECC(int data, int ecc) {
+	private static int checkECC(int data, int ecc) {
 		switch (ecc) {
 		default:
 		case 0:
-			return true;
+			return 1;
 		case 1:
 			return checkParity(data);
 		case 2:
@@ -191,22 +190,22 @@ public class ModuleDynamic_full {
 	/**
 	 * @param data
 	 */
-	private static boolean checkReedSolomon(int data) {
-		return true;
+	private static int checkReedSolomon(int data) {
+		return 1;
 	}
 
 	/**
 	 * @param data
 	 */
-	private static boolean checkHamming(int data) {
-		return true;
+	private static int checkHamming(int data) {
+		return 1;
 	}
 
 	/**
 	 * @param data
 	 */
-	private static boolean checkParity(int data) {
-		return true;
+	private static int checkParity(int data) {
+		return 1;
 	}
 
 //		public int set(int value, int bit) {
