@@ -3,5 +3,6 @@
 out/
 **.class
 .settings/
+bin/
 # Ignore Gradle build output directory
 build
