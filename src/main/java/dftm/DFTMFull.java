@@ -59,29 +59,28 @@ public class DFTMFull {
 	// MOD MIGRATION
 	private void incrementEcc(int position, int ecc) {
 		switch (ecc) {
-		default:
-		case 0:
-			data1[position] = false;
-			data2[position] = false;
-			break;
-		case 1:
-			data1[position] = true;
-			data2[position] = false;
-			break;
-		case 2:
-			data1[position] = false;
-			data2[position] = true;
-			break;
-		case 3:
-			data1[position] = true;
-			data2[position] = true;
-			break;
-		}
+			default:
+			case 0:
+				data1[position] = false;
+				data2[position] = false;
+				break;
+			case 1:
+				data1[position] = true;
+				data2[position] = false;
+				break;
+			case 2:
+				data1[position] = false;
+				data2[position] = true;
+				break;
+			case 3:
+				data1[position] = true;
+				data2[position] = true;
+				break;
+			}
 	}
 
 	private void recoding(int address, int ecc, int pageSize) {
-		if (ecc == 3)
-			return;
+		if (ecc == 3) return;
 
 		int position = address / pageSize;
 		int initialAddress = position * pageSize;
@@ -90,6 +89,7 @@ public class DFTMFull {
 			int read = recodingRead(initialAddress + i, ecc);
 			recodingWrite(initialAddress + i, read, ecc + 1);
 		}
+		
 		incrementEcc(position, ecc + 1);
 	}
 	// END MOD MIGRATION
