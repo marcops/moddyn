@@ -2,6 +2,6 @@
 .gradle
 out/
 **.class
-
+.settings/
 # Ignore Gradle build output directory
 build
