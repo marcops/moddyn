@@ -1,4 +1,4 @@
-package moduledynamic;
+package dftm.old;
 
 public class ModuleDynamic_mig {
 	//ModuleDynamic

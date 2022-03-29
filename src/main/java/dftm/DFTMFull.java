@@ -1,4 +1,4 @@
-package moduledynamic;
+package dftm;
 
 public class DFTMFull {
 	private static final int DEFAULT_PAGE_SIZE = 32000;

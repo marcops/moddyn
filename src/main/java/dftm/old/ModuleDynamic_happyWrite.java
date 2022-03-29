@@ -1,19 +1,16 @@
-package moduledynamic;
+package dftm.old;
 
-public class ModuleDynamic_happyRead {
+public class ModuleDynamic_happyWrite {
 	//ModuleDynamic
 	public void setPageSize(int newPageSize) {
 		pageSize = newPageSize;
 	}
 
-	public int readFlow(int address, int data) {
+	public int writeFlow(int address, int data) {
 		int ecc = getEcc(address);
-		int isOk = checkECC(data, ecc);
-		if (isOk == 1) return data;
-		return 0;
+		return doEcc(data, ecc);
 	}
-	//END ModuleDynamic
-	
+
 	
 	// MEM ACCESS
 	private static final int DEFAULT_PAGE_SIZE = 32000;
@@ -25,7 +22,7 @@ public class ModuleDynamic_happyRead {
 	private boolean[] data1 = new boolean[DEFAULT_MEMORY_SIZE_PER_BLOCK];
 	private boolean[] data2 = new boolean[DEFAULT_MEMORY_SIZE_PER_BLOCK];
 
-	public ModuleDynamic_happyRead() {
+	public ModuleDynamic_happyWrite() {
 		// inicia em hamming
 		for (int i = 0; i < DEFAULT_PAGE_SIZE; i++)
 			data2[i] = true;
@@ -43,45 +40,41 @@ public class ModuleDynamic_happyRead {
 		return address / (pageSize * BYTE_SIZE);
 	}
 
-	// MOD ECC
-	private static int checkECC(int data, int ecc) {
+	private static int doEcc(int data, int ecc) {
 		switch (ecc) {
 		default:
 		case 0:
-			return 1;
+			return data;
 		case 1:
-			return checkParity(data);
+			return doParity(data);
 		case 2:
-			return checkHamming(data);
+			return doHamming(data);
 		case 3:
-			return checkReedSolomon(data);
+			return doReedSolomon(data);
 		}
+
 	}
 
 	/**
 	 * @param data
 	 */
-	private static int checkReedSolomon(int data) {
-		return 1;
+	private static int doReedSolomon(int data) {
+		return data;
 	}
 
 	/**
 	 * @param data
 	 */
-	private static int checkHamming(int data) {
-		return 1;
+	private static int doHamming(int data) {
+		return data;
 	}
 
 	/**
 	 * @param data
 	 */
-	private static int checkParity(int data) {
-		return 1;
+	private static int doParity(int data) {
+		return data;
 	}
 
-//		public int set(int value, int bit) {
-//			return value | (1 << bit);
-//		}
-	// END ECC
 
 }
