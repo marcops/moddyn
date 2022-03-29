@@ -10,17 +10,17 @@ public class DFTMFull {
 	private final static int ENCODER_MODE = 1;
 	private final static int DECODER_MODE = 0;
 
-	private boolean[] data0 = new boolean[DEFAULT_MEMORY_SIZE_PER_BLOCK];
-	private boolean[] data1 = new boolean[DEFAULT_MEMORY_SIZE_PER_BLOCK];
-	private boolean[] data2 = new boolean[DEFAULT_MEMORY_SIZE_PER_BLOCK];
+	private boolean[] memory0 = new boolean[DEFAULT_MEMORY_SIZE_PER_BLOCK];
+	private boolean[] memory1 = new boolean[DEFAULT_MEMORY_SIZE_PER_BLOCK];
+	private boolean[] memory2 = new boolean[DEFAULT_MEMORY_SIZE_PER_BLOCK];
 
 	// INIT COMPUTER
 	public DFTMFull(int newPageSize) {
 		// start in hamming and dynamic
 		for (int i = 0; i < DEFAULT_PAGE_SIZE; i++) {
-			this.data0[i] = true;
-			this.data1[i] = false;
-			this.data2[i] = true;
+			this.memory0[i] = true;
+			this.memory1[i] = false;
+			this.memory2[i] = true;
 		}
 
 		this.pageSize = newPageSize;
@@ -34,15 +34,15 @@ public class DFTMFull {
 
 	public int read(int address, int data) {
 		int ecc = blockFinder(address);
-		int status = eccSelector(data, ecc, DECODER_MODE);
-		if(eccEvaluator(data, status)) return 0;
+		int faultTolerantControlStatus = eccSelector(data, ecc, DECODER_MODE);
+		if(eccEvaluator(data, faultTolerantControlStatus)) return 0;
 		recoding(address, ecc, pageSize);
 		return 0;
 	}
 	// END READ AND WRITE
 
-	private boolean eccEvaluator(int data, int status) {
-		return status == 1;
+	private boolean eccEvaluator(int data, int faultTolerantControlStatus) {
+		return faultTolerantControlStatus == 1;
 	}
 
 	private int getPosition(int address) {
@@ -51,8 +51,8 @@ public class DFTMFull {
 
 	private int blockFinder(int address) {
 		int dataPosition = getPosition(address);
-		int currentData1 = data1[dataPosition] == true ? 1 : 0;
-		int currentData2 = data2[dataPosition] == true ? 2 : 0;
+		int currentData1 = memory1[dataPosition] == true ? 1 : 0;
+		int currentData2 = memory2[dataPosition] == true ? 2 : 0;
 		return currentData1 + currentData2;
 	}
 
@@ -61,20 +61,20 @@ public class DFTMFull {
 		switch (ecc) {
 			default:
 			case 0:
-				data1[position] = false;
-				data2[position] = false;
+				memory1[position] = false;
+				memory2[position] = false;
 				break;
 			case 1:
-				data1[position] = true;
-				data2[position] = false;
+				memory1[position] = true;
+				memory2[position] = false;
 				break;
 			case 2:
-				data1[position] = false;
-				data2[position] = true;
+				memory1[position] = false;
+				memory2[position] = true;
 				break;
 			case 3:
-				data1[position] = true;
-				data2[position] = true;
+				memory1[position] = true;
+				memory2[position] = true;
 				break;
 			}
 	}

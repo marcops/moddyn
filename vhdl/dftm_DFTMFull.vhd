@@ -85,30 +85,30 @@ architecture RTL of dftm_DFTMFull is
   signal class_pageSize_0006 : signed(32-1 downto 0) := (others => '0');
   signal class_ENCODER_MODE_0007 : signed(32-1 downto 0) := X"00000001";
   signal class_DECODER_MODE_0009 : signed(32-1 downto 0) := X"00000000";
-  signal class_data0_0011_clk : std_logic := '0';
-  signal class_data0_0011_reset : std_logic := '0';
-  signal class_data0_0011_length : signed(32-1 downto 0) := (others => '0');
-  signal class_data0_0011_address_b : signed(32-1 downto 0) := (others => '0');
-  signal class_data0_0011_din_b : signed(1-1 downto 0) := (others => '0');
-  signal class_data0_0011_dout_b : signed(1-1 downto 0) := (others => '0');
-  signal class_data0_0011_we_b : std_logic := '0';
-  signal class_data0_0011_oe_b : std_logic := '0';
-  signal class_data1_0014_clk : std_logic := '0';
-  signal class_data1_0014_reset : std_logic := '0';
-  signal class_data1_0014_length : signed(32-1 downto 0) := (others => '0');
-  signal class_data1_0014_address_b : signed(32-1 downto 0) := (others => '0');
-  signal class_data1_0014_din_b : signed(1-1 downto 0) := (others => '0');
-  signal class_data1_0014_dout_b : signed(1-1 downto 0) := (others => '0');
-  signal class_data1_0014_we_b : std_logic := '0';
-  signal class_data1_0014_oe_b : std_logic := '0';
-  signal class_data2_0017_clk : std_logic := '0';
-  signal class_data2_0017_reset : std_logic := '0';
-  signal class_data2_0017_length : signed(32-1 downto 0) := (others => '0');
-  signal class_data2_0017_address_b : signed(32-1 downto 0) := (others => '0');
-  signal class_data2_0017_din_b : signed(1-1 downto 0) := (others => '0');
-  signal class_data2_0017_dout_b : signed(1-1 downto 0) := (others => '0');
-  signal class_data2_0017_we_b : std_logic := '0';
-  signal class_data2_0017_oe_b : std_logic := '0';
+  signal class_memory0_0011_clk : std_logic := '0';
+  signal class_memory0_0011_reset : std_logic := '0';
+  signal class_memory0_0011_length : signed(32-1 downto 0) := (others => '0');
+  signal class_memory0_0011_address_b : signed(32-1 downto 0) := (others => '0');
+  signal class_memory0_0011_din_b : signed(1-1 downto 0) := (others => '0');
+  signal class_memory0_0011_dout_b : signed(1-1 downto 0) := (others => '0');
+  signal class_memory0_0011_we_b : std_logic := '0';
+  signal class_memory0_0011_oe_b : std_logic := '0';
+  signal class_memory1_0014_clk : std_logic := '0';
+  signal class_memory1_0014_reset : std_logic := '0';
+  signal class_memory1_0014_length : signed(32-1 downto 0) := (others => '0');
+  signal class_memory1_0014_address_b : signed(32-1 downto 0) := (others => '0');
+  signal class_memory1_0014_din_b : signed(1-1 downto 0) := (others => '0');
+  signal class_memory1_0014_dout_b : signed(1-1 downto 0) := (others => '0');
+  signal class_memory1_0014_we_b : std_logic := '0';
+  signal class_memory1_0014_oe_b : std_logic := '0';
+  signal class_memory2_0017_clk : std_logic := '0';
+  signal class_memory2_0017_reset : std_logic := '0';
+  signal class_memory2_0017_length : signed(32-1 downto 0) := (others => '0');
+  signal class_memory2_0017_address_b : signed(32-1 downto 0) := (others => '0');
+  signal class_memory2_0017_din_b : signed(1-1 downto 0) := (others => '0');
+  signal class_memory2_0017_dout_b : signed(1-1 downto 0) := (others => '0');
+  signal class_memory2_0017_we_b : std_logic := '0';
+  signal class_memory2_0017_oe_b : std_logic := '0';
   signal write_address_0020 : signed(32-1 downto 0) := (others => '0');
   signal write_address_local : signed(32-1 downto 0) := (others => '0');
   signal write_data_0021 : signed(32-1 downto 0) := (others => '0');
@@ -123,12 +123,12 @@ architecture RTL of dftm_DFTMFull is
   signal method_result_00028 : signed(32-1 downto 0) := (others => '0');
   signal read_ecc_0027 : signed(32-1 downto 0) := (others => '0');
   signal method_result_00030 : signed(32-1 downto 0) := (others => '0');
-  signal read_status_0029 : signed(32-1 downto 0) := (others => '0');
+  signal read_faultTolerantControlStatus_0029 : signed(32-1 downto 0) := (others => '0');
   signal method_result_00031 : std_logic := '0';
   signal eccEvaluator_data_0035 : signed(32-1 downto 0) := (others => '0');
   signal eccEvaluator_data_local : signed(32-1 downto 0) := (others => '0');
-  signal eccEvaluator_status_0036 : signed(32-1 downto 0) := (others => '0');
-  signal eccEvaluator_status_local : signed(32-1 downto 0) := (others => '0');
+  signal eccEvaluator_faultTolerantControlStatus_0036 : signed(32-1 downto 0) := (others => '0');
+  signal eccEvaluator_faultTolerantControlStatus_local : signed(32-1 downto 0) := (others => '0');
   signal binary_expr_00038 : std_logic := '0';
   signal getPosition_address_0039 : signed(32-1 downto 0) := (others => '0');
   signal getPosition_address_local : signed(32-1 downto 0) := (others => '0');
@@ -1054,7 +1054,7 @@ begin
   tmp_0046 <= '1' when eccEvaluator_method /= eccEvaluator_method_S_0001 else '0';
   tmp_0047 <= tmp_0046 and eccEvaluator_req_flag_edge;
   tmp_0048 <= tmp_0045 and tmp_0047;
-  tmp_0049 <= '1' when eccEvaluator_status_0036 = X"00000001" else '0';
+  tmp_0049 <= '1' when eccEvaluator_faultTolerantControlStatus_0036 = X"00000001" else '0';
   tmp_0050 <= not getPosition_req_flag_d;
   tmp_0051 <= getPosition_req_flag and tmp_0050;
   tmp_0052 <= getPosition_req_flag or getPosition_req_flag_d;
@@ -2133,30 +2133,30 @@ begin
   end process;
 
 
-  class_data0_0011_clk <= clk_sig;
+  class_memory0_0011_clk <= clk_sig;
 
-  class_data0_0011_reset <= reset_sig;
+  class_memory0_0011_reset <= reset_sig;
 
-  class_data1_0014_clk <= clk_sig;
+  class_memory1_0014_clk <= clk_sig;
 
-  class_data1_0014_reset <= reset_sig;
+  class_memory1_0014_reset <= reset_sig;
 
   process(clk)
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        class_data1_0014_address_b <= (others => '0');
+        class_memory1_0014_address_b <= (others => '0');
       else
         if blockFinder_method = blockFinder_method_S_0004 then
-          class_data1_0014_address_b <= blockFinder_dataPosition_0043;
+          class_memory1_0014_address_b <= blockFinder_dataPosition_0043;
         elsif incrementEcc_method = incrementEcc_method_S_0005 then
-          class_data1_0014_address_b <= incrementEcc_position_0060;
+          class_memory1_0014_address_b <= incrementEcc_position_0060;
         elsif incrementEcc_method = incrementEcc_method_S_0011 then
-          class_data1_0014_address_b <= incrementEcc_position_0060;
+          class_memory1_0014_address_b <= incrementEcc_position_0060;
         elsif incrementEcc_method = incrementEcc_method_S_0017 then
-          class_data1_0014_address_b <= incrementEcc_position_0060;
+          class_memory1_0014_address_b <= incrementEcc_position_0060;
         elsif incrementEcc_method = incrementEcc_method_S_0023 then
-          class_data1_0014_address_b <= incrementEcc_position_0060;
+          class_memory1_0014_address_b <= incrementEcc_position_0060;
         end if;
       end if;
     end if;
@@ -2166,16 +2166,16 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        class_data1_0014_din_b <= (others => '0');
+        class_memory1_0014_din_b <= (others => '0');
       else
         if incrementEcc_method = incrementEcc_method_S_0005 then
-          class_data1_0014_din_b <= '1';
+          class_memory1_0014_din_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0011 then
-          class_data1_0014_din_b <= '0';
+          class_memory1_0014_din_b <= '0';
         elsif incrementEcc_method = incrementEcc_method_S_0017 then
-          class_data1_0014_din_b <= '1';
+          class_memory1_0014_din_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0023 then
-          class_data1_0014_din_b <= '0';
+          class_memory1_0014_din_b <= '0';
         end if;
       end if;
     end if;
@@ -2185,18 +2185,18 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        class_data1_0014_we_b <= '0';
+        class_memory1_0014_we_b <= '0';
       else
         if incrementEcc_method = incrementEcc_method_S_0005 then
-          class_data1_0014_we_b <= '1';
+          class_memory1_0014_we_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0011 then
-          class_data1_0014_we_b <= '1';
+          class_memory1_0014_we_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0017 then
-          class_data1_0014_we_b <= '1';
+          class_memory1_0014_we_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0023 then
-          class_data1_0014_we_b <= '1';
+          class_memory1_0014_we_b <= '1';
         else
-          class_data1_0014_we_b <= '0';
+          class_memory1_0014_we_b <= '0';
         end if;
       end if;
     end if;
@@ -2206,37 +2206,37 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        class_data1_0014_oe_b <= '0';
+        class_memory1_0014_oe_b <= '0';
       else
         if blockFinder_method = blockFinder_method_S_0016 and blockFinder_method_delay = 0 then
-          class_data1_0014_oe_b <= '1';
+          class_memory1_0014_oe_b <= '1';
         else
-          class_data1_0014_oe_b <= '0';
+          class_memory1_0014_oe_b <= '0';
         end if;
       end if;
     end if;
   end process;
 
-  class_data2_0017_clk <= clk_sig;
+  class_memory2_0017_clk <= clk_sig;
 
-  class_data2_0017_reset <= reset_sig;
+  class_memory2_0017_reset <= reset_sig;
 
   process(clk)
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        class_data2_0017_address_b <= (others => '0');
+        class_memory2_0017_address_b <= (others => '0');
       else
         if blockFinder_method = blockFinder_method_S_0008 then
-          class_data2_0017_address_b <= blockFinder_dataPosition_0043;
+          class_memory2_0017_address_b <= blockFinder_dataPosition_0043;
         elsif incrementEcc_method = incrementEcc_method_S_0007 then
-          class_data2_0017_address_b <= incrementEcc_position_0060;
+          class_memory2_0017_address_b <= incrementEcc_position_0060;
         elsif incrementEcc_method = incrementEcc_method_S_0013 then
-          class_data2_0017_address_b <= incrementEcc_position_0060;
+          class_memory2_0017_address_b <= incrementEcc_position_0060;
         elsif incrementEcc_method = incrementEcc_method_S_0019 then
-          class_data2_0017_address_b <= incrementEcc_position_0060;
+          class_memory2_0017_address_b <= incrementEcc_position_0060;
         elsif incrementEcc_method = incrementEcc_method_S_0025 then
-          class_data2_0017_address_b <= incrementEcc_position_0060;
+          class_memory2_0017_address_b <= incrementEcc_position_0060;
         end if;
       end if;
     end if;
@@ -2246,16 +2246,16 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        class_data2_0017_din_b <= (others => '0');
+        class_memory2_0017_din_b <= (others => '0');
       else
         if incrementEcc_method = incrementEcc_method_S_0007 then
-          class_data2_0017_din_b <= '1';
+          class_memory2_0017_din_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0013 then
-          class_data2_0017_din_b <= '1';
+          class_memory2_0017_din_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0019 then
-          class_data2_0017_din_b <= '0';
+          class_memory2_0017_din_b <= '0';
         elsif incrementEcc_method = incrementEcc_method_S_0025 then
-          class_data2_0017_din_b <= '0';
+          class_memory2_0017_din_b <= '0';
         end if;
       end if;
     end if;
@@ -2265,18 +2265,18 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        class_data2_0017_we_b <= '0';
+        class_memory2_0017_we_b <= '0';
       else
         if incrementEcc_method = incrementEcc_method_S_0007 then
-          class_data2_0017_we_b <= '1';
+          class_memory2_0017_we_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0013 then
-          class_data2_0017_we_b <= '1';
+          class_memory2_0017_we_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0019 then
-          class_data2_0017_we_b <= '1';
+          class_memory2_0017_we_b <= '1';
         elsif incrementEcc_method = incrementEcc_method_S_0025 then
-          class_data2_0017_we_b <= '1';
+          class_memory2_0017_we_b <= '1';
         else
-          class_data2_0017_we_b <= '0';
+          class_memory2_0017_we_b <= '0';
         end if;
       end if;
     end if;
@@ -2286,12 +2286,12 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        class_data2_0017_oe_b <= '0';
+        class_memory2_0017_oe_b <= '0';
       else
         if blockFinder_method = blockFinder_method_S_0018 and blockFinder_method_delay = 0 then
-          class_data2_0017_oe_b <= '1';
+          class_memory2_0017_oe_b <= '1';
         else
-          class_data2_0017_oe_b <= '0';
+          class_memory2_0017_oe_b <= '0';
         end if;
       end if;
     end if;
@@ -2431,10 +2431,10 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        read_status_0029 <= (others => '0');
+        read_faultTolerantControlStatus_0029 <= (others => '0');
       else
         if read_method = read_method_S_0005 then
-          read_status_0029 <= method_result_00030;
+          read_faultTolerantControlStatus_0029 <= method_result_00030;
         end if;
       end if;
     end if;
@@ -2483,10 +2483,10 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        eccEvaluator_status_0036 <= (others => '0');
+        eccEvaluator_faultTolerantControlStatus_0036 <= (others => '0');
       else
         if eccEvaluator_method = eccEvaluator_method_S_0001 then
-          eccEvaluator_status_0036 <= eccEvaluator_status_local;
+          eccEvaluator_faultTolerantControlStatus_0036 <= eccEvaluator_faultTolerantControlStatus_local;
         end if;
       end if;
     end if;
@@ -2496,10 +2496,10 @@ begin
   begin
     if rising_edge(clk) then
       if reset = '1' then
-        eccEvaluator_status_local <= (others => '0');
+        eccEvaluator_faultTolerantControlStatus_local <= (others => '0');
       else
         if read_method = read_method_S_0006_body and read_method_delay = 0 then
-          eccEvaluator_status_local <= read_status_0029;
+          eccEvaluator_faultTolerantControlStatus_local <= read_faultTolerantControlStatus_0029;
         end if;
       end if;
     end if;
@@ -2631,7 +2631,7 @@ begin
         array_access_00046 <= '0';
       else
         if blockFinder_method = blockFinder_method_S_0016 then
-          array_access_00046 <= std_logic(class_data1_0014_dout_b);
+          array_access_00046 <= std_logic(class_memory1_0014_dout_b);
         end if;
       end if;
     end if;
@@ -2683,7 +2683,7 @@ begin
         array_access_00053 <= '0';
       else
         if blockFinder_method = blockFinder_method_S_0018 then
-          array_access_00053 <= std_logic(class_data2_0017_dout_b);
+          array_access_00053 <= std_logic(class_memory2_0017_dout_b);
         end if;
       end if;
     end if;
@@ -4672,7 +4672,7 @@ begin
   ECC_ENCODE_PARITY_req_flag_edge <= tmp_0256;
 
 
-  inst_class_data0_0011 : singleportram
+  inst_class_memory0_0011 : singleportram
   generic map(
     WIDTH => 1,
     DEPTH => 18,
@@ -4681,15 +4681,15 @@ begin
   port map(
     clk => clk,
     reset => reset,
-    length => class_data0_0011_length,
-    address_b => class_data0_0011_address_b,
-    din_b => class_data0_0011_din_b,
-    dout_b => class_data0_0011_dout_b,
-    we_b => class_data0_0011_we_b,
-    oe_b => class_data0_0011_oe_b
+    length => class_memory0_0011_length,
+    address_b => class_memory0_0011_address_b,
+    din_b => class_memory0_0011_din_b,
+    dout_b => class_memory0_0011_dout_b,
+    we_b => class_memory0_0011_we_b,
+    oe_b => class_memory0_0011_oe_b
   );
 
-  inst_class_data1_0014 : singleportram
+  inst_class_memory1_0014 : singleportram
   generic map(
     WIDTH => 1,
     DEPTH => 18,
@@ -4698,15 +4698,15 @@ begin
   port map(
     clk => clk,
     reset => reset,
-    length => class_data1_0014_length,
-    address_b => class_data1_0014_address_b,
-    din_b => class_data1_0014_din_b,
-    dout_b => class_data1_0014_dout_b,
-    we_b => class_data1_0014_we_b,
-    oe_b => class_data1_0014_oe_b
+    length => class_memory1_0014_length,
+    address_b => class_memory1_0014_address_b,
+    din_b => class_memory1_0014_din_b,
+    dout_b => class_memory1_0014_dout_b,
+    we_b => class_memory1_0014_we_b,
+    oe_b => class_memory1_0014_oe_b
   );
 
-  inst_class_data2_0017 : singleportram
+  inst_class_memory2_0017 : singleportram
   generic map(
     WIDTH => 1,
     DEPTH => 18,
@@ -4715,12 +4715,12 @@ begin
   port map(
     clk => clk,
     reset => reset,
-    length => class_data2_0017_length,
-    address_b => class_data2_0017_address_b,
-    din_b => class_data2_0017_din_b,
-    dout_b => class_data2_0017_dout_b,
-    we_b => class_data2_0017_we_b,
-    oe_b => class_data2_0017_oe_b
+    length => class_memory2_0017_length,
+    address_b => class_memory2_0017_address_b,
+    din_b => class_memory2_0017_din_b,
+    dout_b => class_memory2_0017_dout_b,
+    we_b => class_memory2_0017_we_b,
+    oe_b => class_memory2_0017_oe_b
   );
 
   inst_u_synthesijer_mul32_getPosition : synthesijer_mul32
